@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background: linear-gradient(90deg, red 0%, purple 100%);
+    background-attachment: fixed;
+    padding-top: 2vh;
+}
+
+.interface{
+    color: whitesmoke;
+    font-size: large;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 5px 0 5px 0;
+    font-size: 3vh;
+
+}
+
+
+.content{
+    height: 80vh;
+    width: 100vw;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#turnOf{
+    color: white;
+    font-size: 3vh;
+
+}
+
+#playerName{
+    color: white;
+    font-size: 5vh;
+    font-weight: bolder;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 6px;
+    background-color: white;
+    max-width: 100%;
+
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background: black;
+    display: grid;
+    place-content: center;
+    font-size: 100px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.cell.disabled{
+    /* Disable clicks */
+    cursor: progress;
+    pointer-events: none; 
+}
+
+#startGame{
+    color: white;
+    background-color: transparent;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2vh;
+    
+}
+
+#startGame:hover{
+    background: linear-gradient(90deg, red 0%, purple 100%);
+}
+
+#startGame:active{
+    background: purple;
+    transform: translateY(4px);
+    transition-duration: 0.1s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+input{
+    height: 4vh;
+    text-align: center;
+    font-size: 3vh;
+    border: 2px solid black;
+    border-radius: 10px;
+}
